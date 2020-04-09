@@ -1,21 +1,28 @@
+using MHCMS.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace MHCMS.Infrastructure.StartUp
+namespace MHCMS.SampleSite.Web
 {
-    public abstract class CMSStartup : BaseStartup
+    public class Startup
     {
-        public virtual void ConfigureServices(IServiceCollection services)
+        public IConfiguration Configuration;
+
+        public Startup(IConfiguration configuration)
         {
+            Configuration = configuration;
+        }
+
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddMHCMS(Configuration);
             services.AddMvc();
         }
 
-        public CMSStartup(IConfiguration configuration) : base(configuration) { }
-
-        public override void Configure(IApplicationBuilder app, IWebHostEnvironment env, IHostApplicationLifetime applicationLifetime)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {

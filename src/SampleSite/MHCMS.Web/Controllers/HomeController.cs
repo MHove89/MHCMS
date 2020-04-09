@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace MHCMS.Web.Controllers
+namespace MHCMS.SampleSite.Web.Controllers
 {
     public class HomeController : BaseController
     {

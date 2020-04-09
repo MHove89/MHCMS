@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MHCMS.Web.Controllers
+namespace MHCMS.SampleSite.Web.Controllers
 {
     public abstract class BaseController : Controller
     {

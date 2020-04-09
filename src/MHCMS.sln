@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MHCMS.Web", "MHCMS.Web\MHCMS.Web.csproj", "{0F8742A4-043B-4DA9-8691-7D15E2CD68A6}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{95D8979F-E962-4C5A-A140-E0346B4F29EF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MHCMS.Infrastructure", "BuildingBlocks\MHCMS.Infrastructure\MHCMS.Infrastructure.csproj", "{87B75E29-AAC0-4125-B119-BE47400E69AD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MHCMS.Application", "BuildingBlocks\MHCMS.Application\MHCMS.Application.csproj", "{11019080-06F5-45F7-8283-2BC5B7FC642F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{66AC81F0-2D77-4141-AABC-B8C005338A0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MHCMS.Domain", "BuildingBlocks\MHCMS.Domain\MHCMS.Domain.csproj", "{6C7D7B57-8939-449C-9D5C-CFC8C441C776}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MHCMS.Domain", "BuildingBlocks\MHCMS.Domain\MHCMS.Domain.csproj", "{6C7D7B57-8939-449C-9D5C-CFC8C441C776}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MHCMS.Infrastructure.Persistence.EntityFramework", "BuildingBlocks\MHCMS.Infrastructure.Persistence.EntityFramework\MHCMS.Infrastructure.Persistence.EntityFramework.csproj", "{CF459705-5AEB-489E-983B-C75354A7C1DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MHCMS.Infrastructure.Persistence.EntityFramework", "BuildingBlocks\MHCMS.Infrastructure.Persistence.EntityFramework\MHCMS.Infrastructure.Persistence.EntityFramework.csproj", "{CF459705-5AEB-489E-983B-C75354A7C1DA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleSite", "SampleSite", "{9E86013F-5DF8-4D3B-9F96-9E0CEA64D866}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MHCMS.Web", "SampleSite\MHCMS.Web\MHCMS.Web.csproj", "{F975EB13-F5A7-43FE-B155-1816B9ACE9E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{BD4BD033-CE05-49A9-A22A-BA2AE538D0A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MHCMS.Modules.Pages", "Modules\MHCMS.Modules.Pages\MHCMS.Modules.Pages.csproj", "{7F0F3943-BF82-410F-90FF-762CFA6CF27D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0F8742A4-043B-4DA9-8691-7D15E2CD68A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F8742A4-043B-4DA9-8691-7D15E2CD68A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F8742A4-043B-4DA9-8691-7D15E2CD68A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F8742A4-043B-4DA9-8691-7D15E2CD68A6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{87B75E29-AAC0-4125-B119-BE47400E69AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87B75E29-AAC0-4125-B119-BE47400E69AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87B75E29-AAC0-4125-B119-BE47400E69AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,6 +43,14 @@ Global
 		{CF459705-5AEB-489E-983B-C75354A7C1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF459705-5AEB-489E-983B-C75354A7C1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF459705-5AEB-489E-983B-C75354A7C1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F975EB13-F5A7-43FE-B155-1816B9ACE9E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F975EB13-F5A7-43FE-B155-1816B9ACE9E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F975EB13-F5A7-43FE-B155-1816B9ACE9E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F975EB13-F5A7-43FE-B155-1816B9ACE9E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F0F3943-BF82-410F-90FF-762CFA6CF27D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F0F3943-BF82-410F-90FF-762CFA6CF27D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F0F3943-BF82-410F-90FF-762CFA6CF27D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F0F3943-BF82-410F-90FF-762CFA6CF27D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +60,8 @@ Global
 		{11019080-06F5-45F7-8283-2BC5B7FC642F} = {95D8979F-E962-4C5A-A140-E0346B4F29EF}
 		{6C7D7B57-8939-449C-9D5C-CFC8C441C776} = {95D8979F-E962-4C5A-A140-E0346B4F29EF}
 		{CF459705-5AEB-489E-983B-C75354A7C1DA} = {95D8979F-E962-4C5A-A140-E0346B4F29EF}
+		{F975EB13-F5A7-43FE-B155-1816B9ACE9E9} = {9E86013F-5DF8-4D3B-9F96-9E0CEA64D866}
+		{7F0F3943-BF82-410F-90FF-762CFA6CF27D} = {BD4BD033-CE05-49A9-A22A-BA2AE538D0A1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2E27CC8-C405-4AE4-B639-8E32F5D06334}

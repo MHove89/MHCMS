@@ -5,9 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace MHCMS.Infrastructure.Configuration
 {
-    public static class DependencyInjection
+    public static class Dependencies
     {
-        public static IServiceCollection AddInfrastructure(this IServiceCollection services,
+        public static IServiceCollection ConfigureInfrastructure(this IServiceCollection services,
             IConfiguration configuration)
         {
             var provider =
